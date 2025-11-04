@@ -1,11 +1,14 @@
 package com.example.back.global.initData;
 
+
 import com.example.back.domain.post.post.service.PostService;
 import com.example.back.domain.post.postDoc.service.PostDocService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.stream.IntStream;
 
 @Configuration
 @RequiredArgsConstructor
@@ -38,9 +41,25 @@ public class BaseInitData {
         postDocService.write("반려견과의 산책", "오늘 반려견과 함께 공원을 산책했습니다. 맑은 날씨 덕분에 기분 좋은 시간을 보냈어요.");
         postDocService.write("다음 프로젝트 아이디어", "새로운 프로젝트 아이디어가 떠올랐습니다. 기획 단계부터 차근차근 기록해두려고 합니다.");
 
-//        IntStream.rangeClosed(13, 100).forEach(i -> {
-//            postDocService.write("제목 " + i, "내용 " + i);
-//        });
+        // 추가된 테스트 데이터
+        postDocService.write("맛있는 커피를 마시다", "오늘 친구와 커피를 마셨어요");
+        postDocService.write("커피가 좋아요", "아메리카노가 제일 좋아요");
+        postDocService.write("커피를 마시며", "커피를 마시면서 책을 읽었습니다");
+        postDocService.write("맛있는 케이크", "커피와 함께 케이크도 먹었어요");
+        postDocService.write("카페에서 공부", "카페에서 커피를 마시며 공부했어요");
+
+        // 조사가 다른 경우의 테스트
+        postDocService.write("커피가 맛있다", "이 카페 커피는 정말 맛있어요");
+        postDocService.write("커피를 주문했다", "카페에서 커피를 주문했습니다");
+        postDocService.write("커피의 향", "커피의 향이 너무 좋아요");
+
+        // 복합명사 테스트
+        postDocService.write("아이스커피 추천", "시원한 아이스커피 맛집을 찾았어요");
+        postDocService.write("커피메이커 구매", "새로운 커피메이커로 핸드드립 커피를 내려마셨어요");
+
+        IntStream.rangeClosed(15, 100).forEach(i -> {
+            postDocService.write("제목 " + i, "내용 " + i);
+        });
     }
 
     private void work2() {
