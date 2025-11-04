@@ -1,8 +1,8 @@
-package com.example.back.domain.postDoc.controller;
+package com.example.back.domain.post.postDoc.controller;
 
 
-import com.example.back.domain.postDoc.document.PostDoc;
-import com.example.back.domain.postDoc.service.PostDocService;
+import com.example.back.domain.post.postDoc.document.PostDoc;
+import com.example.back.domain.post.postDoc.service.PostDocService;
 import com.example.back.global.rsdata.RsData;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;

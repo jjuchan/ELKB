@@ -1,7 +1,7 @@
-package com.example.back.domain.post.controller;
+package com.example.back.domain.post.post.controller;
 
 
-import com.example.back.domain.post.service.PostService;
+import com.example.back.domain.post.post.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,7 +1,7 @@
-package com.example.back.domain.postDoc.repository;
+package com.example.back.domain.post.postDoc.repository;
 
 
-import com.example.back.domain.postDoc.document.PostDoc;
+import com.example.back.domain.post.postDoc.document.PostDoc;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 import java.util.List;

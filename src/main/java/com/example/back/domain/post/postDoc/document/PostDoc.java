@@ -1,4 +1,4 @@
-package com.example.back.domain.postDoc.document;
+package com.example.back.domain.post.postDoc.document;
 
 import lombok.Builder;
 import lombok.Getter;

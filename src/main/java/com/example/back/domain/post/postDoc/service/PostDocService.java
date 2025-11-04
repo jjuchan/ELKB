@@ -1,8 +1,8 @@
-package com.example.back.domain.postDoc.service;
+package com.example.back.domain.post.postDoc.service;
 
 
-import com.example.back.domain.postDoc.document.PostDoc;
-import com.example.back.domain.postDoc.repository.PostDocRepository;
+import com.example.back.domain.post.postDoc.document.PostDoc;
+import com.example.back.domain.post.postDoc.repository.PostDocRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
